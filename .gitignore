@@ -2,8 +2,6 @@
 .terraform/
 *.tfstate
 *.tfstate.backup
-
-# Ignore variable files that may contain secrets
 *.tfvars
 
 # Crash log files
@@ -20,3 +18,4 @@ override.tf.json
 .vscode/
 .idea/
 *.swp
+
