@@ -114,18 +114,59 @@ The deployment includes:
 - A working public endpoint
 - All resources provisioned via Terraform
 
+## What was Built ##
+
 ### Terraform Module based Infrastructure 
 This deployment consists of the following components, all provisioned using the same reusable Terraform modules:
 
-- A custom VPC with a public subnet
+ **VPC module**
+  - VPC
+  - Subnet
+  - Internet Gateway
+  - Route table and route table association
 
-- An Internet Gateway and public route table
+ **EC2 module**
+  - Security group with dynamic ingress and egress rules
+  - SSH key pair association
+  - EC2 instance
+By leveraging the same Terraform modules, the deployment follows a standardised structure, reduces code duplication, and simplifies future updates or extensions. This approach also reflects real-world Infrastructure as Code best practices, where reusable modules enable faster and more reliable infrastructure provisioning across multiple environments.
 
-- A Security Group allowing HTTP and SSH access
+A **cloud-init YAML configuration file**
 
-- An EC2 instance provisioned via Terraform
+During the instance’s first boot, cloud-init automatically:
 
-- A cloud-init YAML file used to automate configuration on first boot
+* Updates system packages
+* Installs the required software
+* Configures and enables necessary services
+* Ensures the instance is fully configured before it becomes available
+
+Unlike a traditional shell-based user data script, cloud-init offers a declarative and structured approach to instance configuration, making deployments more predictable, maintainable, and easier to manage.
+
+## How to Deploy
+```bash
+cd Terraform-Wordpress
+Cd Assignment -2
+```
+You have to do this from the Root Directory.
+
+## 2. Initalise Terraform
+```bash
+terraform init
+```
+Terraform needs to download the required provider plugins
+
+### 3. Review & Apply Infrastructure
+
+```bash
+terraform plan
+terraform apply
+```
+## Verification
+
+
+
+
+
 
 
 
