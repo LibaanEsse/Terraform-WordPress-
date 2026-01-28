@@ -60,6 +60,29 @@ On first boot, the script automatically:
 git clone https://github.com/LibaanEsse/terraform-wordpress.git
 cd Terraform-Wordpress
 ```
+You have to do this from the Root Directory.
+
+## 2. Initalise Terraform
+```bash
+terraform init
+```
+Make sure you you run this command after creating your providers.tf 
+
+### 3. Review & Apply Infrastructure
+
+```bash
+terraform plan
+terraform apply
+```
+## Verification
+
+After deployment:
+
+- Navigating to the EC2 instance’s public IP address in a web browser loads the WordPress installation page
+- WordPress is accessible over HTTP via port 80
+
+
+
 
 
 
