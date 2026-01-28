@@ -18,7 +18,7 @@ The deployment includes:
 
 ### Terraform Module based Infrastructure 
 
-The infrastructure is organized using dedicated Terraform modules, with each module responsible for a specific layer of the stack:
+The infrastructure is organised using dedicated Terraform modules, with each module responsible for a specific layer of the stack:
 
 - **VPC Module**
   - VPC
