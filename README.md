@@ -66,7 +66,7 @@ You have to do this from the Root Directory.
 ```bash
 terraform init
 ```
-Make sure you you run this command after creating your providers.tf 
+Make sure you you run this command after creating your providers.tf file.
 
 ### 3. Review & Apply Infrastructure
 
@@ -102,6 +102,33 @@ After deployment:
 - Fixing WordPress file ownership and permission issues
 
 - Defining and managing variable default values after terraform
+
+# Assignment 2 – EC2 Deployment Using Cloud-Init 
+Thw goak of this assignment is to demonstrate the use of Terraform and cloud-init to declaratively provision AWS infrastructure and automate EC2 instance configuration at boot time through Infrastructure as Code. All infrastructure in this assignment was provisioned and managed entirely using Terraform, with no manual configuration performed through the AWS Management Console.
+The assignment also demonstrates Terraform’s integration with cloud-init to automate EC2 instance configuration during the initial boot process.
+
+The deployment includes:
+- An EC2 instance provisioned via Terraform
+- Security groups
+- A cloud-init configuration to install and configure software
+- A working public endpoint
+- All resources provisioned via Terraform
+
+### Terraform Module based Infrastructure 
+This deployment consists of the following components, all provisioned using the same reusable Terraform modules:
+
+- A custom VPC with a public subnet
+
+- An Internet Gateway and public route table
+
+- A Security Group allowing HTTP and SSH access
+
+- An EC2 instance provisioned via Terraform
+
+- A cloud-init YAML file used to automate configuration on first boot
+
+
+
 
 
 
