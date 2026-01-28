@@ -41,7 +41,7 @@ A **user data shell script** is passed to the EC2 instance using Terraform.
 
 On first boot, the script automatically:
 
-= Updates system packages
+- Updates system packages
 
 - Installs Apache, PHP, and required dependencies
 
@@ -80,8 +80,30 @@ After deployment:
 
 - Navigating to the EC2 instance’s public IP address in a web browser loads the WordPress installation page
 - WordPress is accessible over HTTP via port 80
+
  ## Assignment Images 
  You can view all project images which includes a detailed step by step tutorial here: [View all images](https://github.com/LibaanEsse/Terraform-WordPress-/tree/main/Images)
+
+## Key Concepts Demonstrated
+- Infrastructure as Code using Terraform
+- AWS EC2 and networking fundamentals
+- Terraform module design and reuse
+- Dynamic security group configuration
+- Automated instance bootstrapping using user data
+- Debugging and resolving real-world infrastructure issues
+
+## Challanges ##
+- Debugging user data scripts that run only on first boot
+
+- Correctly configuring security groups to allow HTTP and SSH access
+
+- Passing outputs and variables between Terraform modules
+
+- Fixing WordPress file ownership and permission issues
+
+- Defining and managing variable default values after terraform
+
+
 
 
 
