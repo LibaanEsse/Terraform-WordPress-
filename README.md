@@ -144,7 +144,6 @@ Unlike a traditional shell-based user data script, cloud-init offers a declarati
 
 ## How to Deploy
 ```bash
-cd Terraform-Wordpress
 Cd Assignment -2
 ```
 You have to do this from the Root Directory.
@@ -162,6 +161,36 @@ terraform plan
 terraform apply
 ```
 ## Verification
+After deployment:
+
+- The EC2 instance is reachable via its public IP address
+- Cloud-init completes successfully on first boot
+
+Installed services are running automatically without manual setup
+Terraform exposes outputs such as the EC2 instance’s public IP address, making it easy to access the deployed instance once provisioning is complete. These outputs remove the need to manually locate resources in the AWS Management Console and provide a simple way to confirm that the deployment was successful.
+
+## Assignment Images 
+ You can view all project images which includes a detailed step by step tutorial here: [View all images](https://github.com/LibaanEsse/Terraform-WordPress-/tree/main/assignment-2/images)  
+
+ ## Key Concepts Demonstrated
+
+- Infrastructure as Code using Terraform
+- AWS EC2 and networking fundamentals
+- Terraform module composition and reuse
+- Instance bootstrapping using cloud-init
+- Declarative configuration management
+- Automated provisioning with zero manual intervention
+- Understanding the difference between user-data scripts and cloud-init
+
+## Challanges 
+- Designing and reusing Terraform modules correctly
+
+- Automating instance bootstrapping with cloud-init
+
+- Automating configuration without manual steps
+
+- Distinguishing between traditional user-data scripts and cloud-init
+ 
 
 
 
