@@ -145,7 +145,7 @@ Unlike a traditional shell-based user data script, cloud-init offers a declarati
 
 ## How to Deploy
 ```bash
-Cd Assignment -2
+Cd Assignment-2
 ```
 You have to do this from the Root Directory.
 
