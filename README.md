@@ -129,6 +129,7 @@ This deployment consists of the following components, all provisioned using the 
   - Security group with dynamic ingress and egress rules
   - SSH key pair association
   - EC2 instance
+
 By leveraging the same Terraform modules, the deployment follows a standardised structure, reduces code duplication, and simplifies future updates or extensions. This approach also reflects real-world Infrastructure as Code best practices, where reusable modules enable faster and more reliable infrastructure provisioning across multiple environments.
 
 A **cloud-init YAML configuration file**
