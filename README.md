@@ -104,7 +104,7 @@ After deployment:
 - Defining and managing variable default values after terraform
 
 # Assignment 2 – EC2 Deployment Using Cloud-Init 
-Thw goak of this assignment is to demonstrate the use of Terraform and cloud-init to declaratively provision AWS infrastructure and automate EC2 instance configuration at boot time through Infrastructure as Code. All infrastructure in this assignment was provisioned and managed entirely using Terraform, with no manual configuration performed through the AWS Management Console.
+Thw goa; of this assignment is to demonstrate the use of Terraform and cloud-init to directly provision AWS infrastructure and automate EC2 instance configuration at boot time through Infrastructure as Code. All infrastructure in this assignment was provisioned and managed entirely using Terraform, with no manual configuration performed through the AWS Management Console.
 The assignment also demonstrates Terraform’s integration with cloud-init to automate EC2 instance configuration during the initial boot process.
 
 The deployment includes:
