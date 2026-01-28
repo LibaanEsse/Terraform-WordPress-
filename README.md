@@ -2,7 +2,7 @@
 
 ## Overview ##
 This repository showcases hands-on learning and practical implementation of **AWS infrastructure using Terraform**, with an emphasis on real-world cloud architecture, automation, and Infrastructure as Code (IaC) best practices.
-Each assignment is organized as a self-contained Terraform project, demonstrating progressively advanced concepts such as modular infrastructure design, automated EC2 bootstrapping, and configuration management using cloud-init. All AWS resources are provisioned entirely through Terraform, with no manual configuration performed in the AWS Management Console. 
+Each assignment is organised as a self-contained Terraform project, demonstrating progressively advanced concepts such as modular infrastructure design, automated EC2 bootstrapping, and configuration management using cloud-init. All AWS resources are provisioned entirely through Terraform, with no manual configuration performed in the AWS Management Console. 
 
 ## Assignment 1 – Deployment of AWS WordPress Using Terraform
 The goal of this assignment is to deploy a fully operational **WordPress stack on AWS** using **Terraform**, demonstrating how Infrastructure as Code (IaC) can automate the provisioning and configuration of real cloud infrastructure from start to finish.
@@ -55,6 +55,11 @@ On first boot, the script automatically:
 
  This ensures the EC2 instance is fully configured with WordPress without any manual intervention.
 
+## How to Deploy
+```bash
+git clone https://github.com/LibaanEsse/terraform-wordpress.git
+cd Terraform-Wordpress
+```
 
 
 
