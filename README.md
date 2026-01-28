@@ -80,6 +80,8 @@ After deployment:
 
 - Navigating to the EC2 instance’s public IP address in a web browser loads the WordPress installation page
 - WordPress is accessible over HTTP via port 80
+ ## Assignment Images 
+ You can view all project images which includes a detailed step by step tutorial here: [View all images](https://github.com/LibaanEsse/Terraform-WordPress-/tree/main/Images)
 
 
 
